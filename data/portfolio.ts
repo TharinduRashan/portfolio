@@ -43,7 +43,7 @@ export const portfolioData = {
     websiteUrl: "https://tharindurashan.me",
     seoDescription: "Tharindu Rashan — Software Developer & CEO & Co-Founder of Cloudzyne. I build useful software with purpose and precision.",
     shortBio: "Software Developer · CEO & Co-Founder of Cloudzyne. I build useful software with purpose and precision.",
-    ogImageUrl: "https://tharindurashan.me/og-image.png",
+    ogImageUrl: "https://tharindurashan.me/og-image.png?v=2",
     resumePath: "/Tharindu-Rashan-CV.pdf",
     resumeNote: "Curriculum Vitae • PDF"
   },
