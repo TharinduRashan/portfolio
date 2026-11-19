@@ -161,7 +161,8 @@ export const portfolioData = {
         description: "An offline-first point-of-sale platform designed around reliable retail workflows, licensing, and multi-terminal consistency.",
         tags: ["TypeScript", "Node.js", "Offline-first"],
         href: "https://github.com/Cloudzyne/POS",
-        visual: "pos"
+        visual: "pos",
+        image: "/projects/pos.png"
       },
       {
         number: "02",
@@ -170,7 +171,8 @@ export const portfolioData = {
         description: "A salon management application exploring object-oriented design, role-based workflows, and practical CRUD operations.",
         tags: ["Java", "Spring Boot", "JavaScript"],
         href: "https://github.com/TharinduRashan/Beauty-Salon",
-        visual: "salon"
+        visual: "salon",
+        image: "/projects/salon.png"
       },
       {
         number: "03",
@@ -179,7 +181,8 @@ export const portfolioData = {
         description: "A personal exploration into building useful system controls and desktop tooling for an ASUS TUF laptop.",
         tags: ["Rust", "Windows", "Systems"],
         href: "https://github.com/TharinduRashan/TUF-Control-Center",
-        visual: "control"
+        visual: "control",
+        image: "/projects/control.png"
       }
     ] as Project[]
   },
