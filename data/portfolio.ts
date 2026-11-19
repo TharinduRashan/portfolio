@@ -6,6 +6,7 @@ export interface Project {
   tags: string[];
   href: string;
   visual: "pos" | "salon" | "control";
+  image?: string;
 }
 
 export interface SkillCategory {

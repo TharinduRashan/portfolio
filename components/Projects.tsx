@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowUpRight, Github } from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
 
@@ -20,64 +21,76 @@ export default function Projects() {
           {projects.items.map((project) => (
             <article className="project" key={project.number}>
               <div className={`project-visual ${project.visual}`}>
-                {project.visual === "pos" && (
-                  <div className="mock-pos">
-                    <div className="mock-top">
-                      <span>cloudzyne</span>
-                      <span>● ● ●</span>
-                    </div>
-                    <div className="mock-body">
-                      <div className="mock-sidebar">
-                        <i />
-                        <i />
-                        <i />
-                        <i />
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.name}
+                    fill
+                    className="project-image"
+                    sizes="(max-width: 800px) 100vw, 50vw"
+                  />
+                ) : (
+                  <>
+                    {project.visual === "pos" && (
+                      <div className="mock-pos">
+                        <div className="mock-top">
+                          <span>cloudzyne</span>
+                          <span>● ● ●</span>
+                        </div>
+                        <div className="mock-body">
+                          <div className="mock-sidebar">
+                            <i />
+                            <i />
+                            <i />
+                            <i />
+                          </div>
+                          <div className="mock-content">
+                            <b>Good morning.</b>
+                            <span>Today&apos;s overview</span>
+                            <div className="mock-stats">
+                              <i />
+                              <i />
+                              <i />
+                            </div>
+                            <div className="mock-chart" />
+                          </div>
+                        </div>
                       </div>
-                      <div className="mock-content">
-                        <b>Good morning.</b>
-                        <span>Today&apos;s overview</span>
-                        <div className="mock-stats">
+                    )}
+                    {project.visual === "salon" && (
+                      <div className="mock-salon">
+                        <span>THE STUDIO</span>
+                        <b>
+                          Beauty
+                          <br />
+                          in every
+                          <br />
+                          <i>detail.</i>
+                        </b>
+                        <small>BOOKING · CARE · CONFIDENCE</small>
+                      </div>
+                    )}
+                    {project.visual === "control" && (
+                      <div className="mock-terminal">
+                        <div>
                           <i />
                           <i />
                           <i />
                         </div>
-                        <div className="mock-chart" />
+                        <code>
+                          <span>~</span> system.status
+                          <br />
+                          &nbsp; cpu&nbsp;&nbsp;&nbsp;&nbsp; 12%
+                          <br />
+                          &nbsp; memory&nbsp; 6.4 GB
+                          <br />
+                          &nbsp; mode&nbsp;&nbsp;&nbsp; balanced
+                          <br />
+                          <em>› ready_</em>
+                        </code>
                       </div>
-                    </div>
-                  </div>
-                )}
-                {project.visual === "salon" && (
-                  <div className="mock-salon">
-                    <span>THE STUDIO</span>
-                    <b>
-                      Beauty
-                      <br />
-                      in every
-                      <br />
-                      <i>detail.</i>
-                    </b>
-                    <small>BOOKING · CARE · CONFIDENCE</small>
-                  </div>
-                )}
-                {project.visual === "control" && (
-                  <div className="mock-terminal">
-                    <div>
-                      <i />
-                      <i />
-                      <i />
-                    </div>
-                    <code>
-                      <span>~</span> system.status
-                      <br />
-                      &nbsp; cpu&nbsp;&nbsp;&nbsp;&nbsp; 12%
-                      <br />
-                      &nbsp; memory&nbsp; 6.4 GB
-                      <br />
-                      &nbsp; mode&nbsp;&nbsp;&nbsp; balanced
-                      <br />
-                      <em>› ready_</em>
-                    </code>
-                  </div>
+                    )}
+                  </>
                 )}
               </div>
               <div className="project-info">
