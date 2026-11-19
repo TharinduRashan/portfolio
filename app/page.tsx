@@ -14,10 +14,10 @@ export default function Home() {
 
   useEffect(() => {
     const saved = localStorage.getItem("portfolio_theme");
-    if (saved) {
-      setDark(saved === "dark");
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    if (saved === "dark") {
       setDark(true);
+    } else if (saved === "light") {
+      setDark(false);
     }
   }, []);
 

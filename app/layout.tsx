@@ -3,10 +3,7 @@ import "./globals.css";
 import { portfolioData } from "@/data/portfolio";
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f5f5f7" },
-    { media: "(prefers-color-scheme: dark)", color: "#111114" }
-  ]
+  themeColor: "#f5f5f7"
 };
 
 export const metadata: Metadata = {
