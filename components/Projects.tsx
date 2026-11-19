@@ -21,22 +21,22 @@ export default function Projects() {
           {projects.items.map((project) => (
             <article className="project" key={project.number}>
               <div className={`project-visual ${project.visual}`}>
-                {project.image ? (
-                  <Image
-                    src={project.image}
-                    alt={project.name}
-                    fill
-                    className="project-image"
-                    sizes="(max-width: 800px) 100vw, 50vw"
-                  />
-                ) : (
-                  <>
-                    {project.visual === "pos" && (
-                      <div className="mock-pos">
-                        <div className="mock-top">
-                          <span>cloudzyne</span>
-                          <span>● ● ●</span>
-                        </div>
+                {project.visual === "pos" && (
+                  <div className="mock-window pos-window">
+                    <div className="mock-top">
+                      <span>cloudzyne pos</span>
+                      <span>● ● ●</span>
+                    </div>
+                    <div className="mock-window-img">
+                      {project.image ? (
+                        <Image
+                          src={project.image}
+                          alt={project.name}
+                          fill
+                          className="project-image"
+                          sizes="(max-width: 800px) 100vw, 50vw"
+                        />
+                      ) : (
                         <div className="mock-body">
                           <div className="mock-sidebar">
                             <i />
@@ -55,44 +55,79 @@ export default function Projects() {
                             <div className="mock-chart" />
                           </div>
                         </div>
-                      </div>
-                    )}
-                    {project.visual === "salon" && (
-                      <div className="mock-salon">
-                        <span>THE STUDIO</span>
-                        <b>
-                          Beauty
-                          <br />
-                          in every
-                          <br />
-                          <i>detail.</i>
-                        </b>
-                        <small>BOOKING · CARE · CONFIDENCE</small>
-                      </div>
-                    )}
-                    {project.visual === "control" && (
-                      <div className="mock-terminal">
-                        <div>
-                          <i />
-                          <i />
-                          <i />
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {project.visual === "salon" && (
+                  <div className="mock-window salon-window">
+                    <div className="mock-top">
+                      <span>beauty salon</span>
+                      <span>● ● ●</span>
+                    </div>
+                    <div className="mock-window-img">
+                      {project.image ? (
+                        <Image
+                          src={project.image}
+                          alt={project.name}
+                          fill
+                          className="project-image"
+                          sizes="(max-width: 800px) 100vw, 50vw"
+                        />
+                      ) : (
+                        <div className="mock-salon">
+                          <span>THE STUDIO</span>
+                          <b>
+                            Beauty
+                            <br />
+                            in every
+                            <br />
+                            <i>detail.</i>
+                          </b>
+                          <small>BOOKING · CARE · CONFIDENCE</small>
                         </div>
-                        <code>
-                          <span>~</span> system.status
-                          <br />
-                          &nbsp; cpu&nbsp;&nbsp;&nbsp;&nbsp; 12%
-                          <br />
-                          &nbsp; memory&nbsp; 6.4 GB
-                          <br />
-                          &nbsp; mode&nbsp;&nbsp;&nbsp; balanced
-                          <br />
-                          <em>› ready_</em>
-                        </code>
-                      </div>
-                    )}
-                  </>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {project.visual === "control" && (
+                  <div className="mock-window control-window">
+                    <div className="mock-terminal-top">
+                      <i />
+                      <i />
+                      <i />
+                    </div>
+                    <div className="mock-window-img" style={{ background: "#141820" }}>
+                      {project.image ? (
+                        <Image
+                          src={project.image}
+                          alt={project.name}
+                          fill
+                          className="project-image"
+                          sizes="(max-width: 800px) 100vw, 50vw"
+                        />
+                      ) : (
+                        <div className="mock-terminal" style={{ width: "100%", height: "100%", transform: "none", border: "none" }}>
+                          <code>
+                            <span>~</span> system.status
+                            <br />
+                            &nbsp; cpu&nbsp;&nbsp;&nbsp;&nbsp; 12%
+                            <br />
+                            &nbsp; memory&nbsp; 6.4 GB
+                            <br />
+                            &nbsp; mode&nbsp;&nbsp;&nbsp; balanced
+                            <br />
+                            <em>› ready_</em>
+                          </code>
+                        </div>
+                      )}
+                    </div>
+                  </div>
                 )}
               </div>
+
               <div className="project-info">
                 <div className="project-topline">
                   <span>
