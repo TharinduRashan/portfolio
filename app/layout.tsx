@@ -13,11 +13,12 @@ export const metadata: Metadata = {
   keywords: [
     "Tharindu Rashan",
     "Software Developer",
+    "CEO & Co-Founder of Cloudzyne",
     "IT Undergraduate",
     "SLIIT",
     "BIT at UoM",
     "Cloudzyne",
-    "Web Developer",
+    "Full Stack Developer",
     "Sri Lanka"
   ],
   authors: [{ name: portfolioData.personal.name, url: portfolioData.personal.websiteUrl }],
@@ -32,14 +33,25 @@ export const metadata: Metadata = {
     title: `${portfolioData.personal.name} — ${portfolioData.personal.title}`,
     description: portfolioData.personal.shortBio,
     url: portfolioData.personal.websiteUrl,
-    siteName: `${portfolioData.personal.name} Portfolio`,
+    siteName: portfolioData.personal.name,
     locale: "en_US",
-    type: "website"
+    type: "website",
+    images: [
+      {
+        url: portfolioData.personal.ogImageUrl,
+        secureUrl: portfolioData.personal.ogImageUrl,
+        width: 1200,
+        height: 630,
+        alt: `${portfolioData.personal.name} — ${portfolioData.personal.title} & ${portfolioData.personal.subtitle}`,
+        type: "image/png"
+      }
+    ]
   },
   twitter: {
     card: "summary_large_image",
     title: `${portfolioData.personal.name} — ${portfolioData.personal.title}`,
-    description: portfolioData.personal.shortBio
+    description: portfolioData.personal.shortBio,
+    images: [portfolioData.personal.ogImageUrl]
   },
   alternates: {
     canonical: "/"
