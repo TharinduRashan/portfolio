@@ -39,7 +39,7 @@ export const portfolioData = {
     email: "tharindurashan7@gmail.com",
     roleDescription: "a software developer and IT undergraduate who enjoys turning thoughtful ideas into useful digital experiences.",
     location: "Sri Lanka",
-    websiteUrl: "https://tharindurashan.com",
+    websiteUrl: "https://tharindurashan.me",
     seoDescription: "The personal portfolio of Tharindu Rashan — software developer, builder, and technology enthusiast from Sri Lanka.",
     shortBio: "I build useful software with purpose and precision.",
     resumePath: "/Tharindu-Rashan-CV.pdf",
