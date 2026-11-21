@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { portfolioData } from "@/data/portfolio";
 
 export default function Footer() {
@@ -5,10 +6,10 @@ export default function Footer() {
 
   return (
     <footer className="footer container">
-      <a className="wordmark" href="#home">
+      <Link className="wordmark" href="/">
         {footer.wordmark}
         <span>.</span>
-      </a>
+      </Link>
       <span>{footer.tagline}</span>
       <span>© {new Date().getFullYear()} {personal.name}</span>
       <a href="#home" className="back-top">
