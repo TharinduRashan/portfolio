@@ -25,10 +25,15 @@ export const metadata: Metadata = {
   creator: portfolioData.personal.name,
   icons: {
     icon: [
-      { url: `${portfolioData.personal.websiteUrl}/favicon.svg`, type: "image/svg+xml" }
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" }
     ],
-    shortcut: `${portfolioData.personal.websiteUrl}/favicon.svg`
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
+    ]
   },
+  manifest: "/site.webmanifest",
   openGraph: {
     title: `${portfolioData.personal.name} — ${portfolioData.personal.title}`,
     description: portfolioData.personal.seoDescription,
