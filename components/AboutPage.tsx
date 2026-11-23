@@ -89,8 +89,8 @@ export default function AboutPage() {
           </p>
           <p>
             Over time I moved from experimenting with small scripts and toy projects to working across
-            the full stack — picking up Java and Spring Boot for backend work, JavaScript and TypeScript
-            for the web, and exploring systems-level languages like Rust for desktop tooling. I try to
+            the full stack — picking up Python and Java for backend and desktop tooling, JavaScript and TypeScript
+            for the web, and exploring systems-level languages like Rust. I try to
             approach every project as a chance to learn something new rather than just ship something
             that works.
           </p>

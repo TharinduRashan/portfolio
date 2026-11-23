@@ -199,7 +199,7 @@ export const portfolioData = {
     },
     intro: "I believe in choosing the right tool for the problem. Here are some of the technologies I've worked with and the areas I'm exploring.",
     categories: [
-      { group: "Languages", items: ["Java", "JavaScript", "TypeScript", "C#", "Rust"] },
+      { group: "Languages", items: ["Python", "Java", "JavaScript", "TypeScript", "C#", "Rust"] },
       { group: "Web & backend", items: ["React", "Next.js", "Spring Boot", "Node.js", "HTML & CSS"] },
       { group: "Tools & platforms", items: ["Git & GitHub", "Linux", "Azure", "Vercel", "Docker"] },
       { group: "Exploring", items: ["Artificial intelligence", "Cybersecurity", "Cloud infrastructure", "Automation"] }
