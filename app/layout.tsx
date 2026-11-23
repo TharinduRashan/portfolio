@@ -25,13 +25,13 @@ export const metadata: Metadata = {
   creator: portfolioData.personal.name,
   icons: {
     icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/favicon.svg", type: "image/svg+xml" }
-    ]
+      { url: `${portfolioData.personal.websiteUrl}/favicon.svg`, type: "image/svg+xml" }
+    ],
+    shortcut: `${portfolioData.personal.websiteUrl}/favicon.svg`
   },
   openGraph: {
     title: `${portfolioData.personal.name} — ${portfolioData.personal.title}`,
-    description: portfolioData.personal.shortBio,
+    description: portfolioData.personal.seoDescription,
     url: portfolioData.personal.websiteUrl,
     siteName: portfolioData.personal.name,
     locale: "en_US",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `${portfolioData.personal.name} — ${portfolioData.personal.title}`,
-    description: portfolioData.personal.shortBio,
+    description: portfolioData.personal.seoDescription,
     images: [portfolioData.personal.ogImageUrl]
   },
   alternates: {
