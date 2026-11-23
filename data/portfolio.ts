@@ -5,7 +5,7 @@ export interface Project {
   description: string;
   tags: string[];
   href: string;
-  visual: "pos" | "salon" | "control" | "vidgrab";
+  visual: "pos" | "control" | "vidgrab";
   image?: string;
 }
 

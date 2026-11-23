@@ -98,37 +98,6 @@ export default function Projects() {
                   </div>
                 )}
 
-                {project.visual === "salon" && (
-                  <div className="mock-window salon-window">
-                    <div className="mock-top">
-                      <span>beauty salon</span>
-                      <span>● ● ●</span>
-                    </div>
-                    <div className="mock-window-img">
-                      {project.image ? (
-                        <Image
-                          src={project.image}
-                          alt={project.name}
-                          fill
-                          className="project-image"
-                          sizes="(max-width: 800px) 100vw, 50vw"
-                        />
-                      ) : (
-                        <div className="mock-salon">
-                          <span>THE STUDIO</span>
-                          <b>
-                            Beauty
-                            <br />
-                            in every
-                            <br />
-                            <i>detail.</i>
-                          </b>
-                          <small>BOOKING · CARE · CONFIDENCE</small>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                )}
 
                 {project.visual === "control" && (
                   <div className="mock-window control-window">
