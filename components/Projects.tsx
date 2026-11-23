@@ -60,6 +60,44 @@ export default function Projects() {
                   </div>
                 )}
 
+                {project.visual === "vidgrab" && (
+                  <div className="mock-window vidgrab-window">
+                    <div className="mock-top vidgrab-mock-top">
+                      <span>vidgrab — media downloader</span>
+                      <span>● ● ●</span>
+                    </div>
+                    <div className="mock-window-img">
+                      {project.image ? (
+                        <Image
+                          src={project.image}
+                          alt={project.name}
+                          fill
+                          className="project-image"
+                          sizes="(max-width: 800px) 100vw, 50vw"
+                        />
+                      ) : (
+                        <div className="mock-vidgrab">
+                          <div className="mock-vidgrab-bar">
+                            <span className="mock-vidgrab-url">https://youtube.com/watch?v=...</span>
+                            <span className="mock-vidgrab-btn">Fetch</span>
+                          </div>
+                          <div className="mock-vidgrab-meta">
+                            <b>Video &amp; Audio Stream Inspector</b>
+                            <span>1080p60 · MP4 · yt-dlp core</span>
+                          </div>
+                          <div className="mock-vidgrab-progress">
+                            <div className="mock-vidgrab-fill" />
+                          </div>
+                          <div className="mock-vidgrab-status">
+                            <span>Downloading 84% · 16.8 MB/s</span>
+                            <span>ETA 00:02</span>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+
                 {project.visual === "salon" && (
                   <div className="mock-window salon-window">
                     <div className="mock-top">

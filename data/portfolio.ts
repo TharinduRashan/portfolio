@@ -5,7 +5,7 @@ export interface Project {
   description: string;
   tags: string[];
   href: string;
-  visual: "pos" | "salon" | "control";
+  visual: "pos" | "salon" | "control" | "vidgrab";
   image?: string;
 }
 
@@ -170,13 +170,13 @@ export const portfolioData = {
       },
       {
         number: "02",
-        name: "Beauty Salon",
-        type: "Web application · Coursework",
-        description: "A salon management application exploring object-oriented design, role-based workflows, and practical CRUD operations.",
-        tags: ["Java", "Spring Boot", "JavaScript"],
-        href: "https://github.com/TharinduRashan/Beauty-Salon",
-        visual: "salon",
-        image: "/projects/salon.png"
+        name: "VidGrab",
+        type: "Desktop application · Open source",
+        description: "A fast, modern desktop video and audio downloader powered by yt-dlp, featuring multi-platform extraction, format inspection, and parallel queue management.",
+        tags: ["Python", "yt-dlp", "Tkinter"],
+        href: "https://github.com/TharinduRashan/vidgrab",
+        visual: "vidgrab",
+        image: "/projects/vidgrab.png"
       },
       {
         number: "03",
