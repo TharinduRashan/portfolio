@@ -26,9 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = isPosArticle
     ? "Building an Offline-First POS System | Tharindu Rashan"
     : `${article.title} – ${personal.name}`;
-  const canonicalUrl = isPosArticle
-    ? "https://www.tharindurashan.me/blog/building-offline-first-pos-system"
-    : `${personal.websiteUrl}/blog/${article.slug}`;
+  const canonicalUrl = `${personal.websiteUrl}/blog/${article.slug}`;
 
   return {
     title,
@@ -70,10 +68,7 @@ export default async function BlogPostPage({ params }: Props) {
   if (!article || article.draft) notFound();
 
   const { personal } = portfolioData;
-  const canonicalUrl =
-    slug === "building-offline-first-pos-system"
-      ? "https://www.tharindurashan.me/blog/building-offline-first-pos-system"
-      : `${personal.websiteUrl}/blog/${article.slug}`;
+  const canonicalUrl = `${personal.websiteUrl}/blog/${article.slug}`;
 
   const jsonLd = {
     "@context": "https://schema.org",

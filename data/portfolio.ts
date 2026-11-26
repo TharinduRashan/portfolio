@@ -40,10 +40,10 @@ export const portfolioData = {
     email: "tharindurashan7@gmail.com",
     roleDescription: "a software developer and IT undergraduate who enjoys turning thoughtful ideas into useful digital experiences.",
     location: "Sri Lanka",
-    websiteUrl: "https://tharindurashan.me",
+    websiteUrl: "https://www.tharindurashan.me",
     seoDescription: "Tharindu Rashan — Software Developer & CEO & Co-Founder of Cloudzyne. I build useful software with purpose and precision.",
     shortBio: "Software Developer · CEO & Co-Founder of Cloudzyne. I build useful software with purpose and precision.",
-    ogImageUrl: "https://tharindurashan.me/og-image.png?v=2",
+    ogImageUrl: "https://www.tharindurashan.me/og-image.png?v=2",
     resumePath: "/Tharindu-Rashan-CV.pdf",
     resumeNote: "Curriculum Vitae • PDF"
   },
